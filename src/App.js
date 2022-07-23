@@ -1,8 +1,11 @@
+import First from "./components/First";
+import TruthContext from "./components/TruthContext/TruthContext";
+import truth from "./components/TruthContext/TruthContext";
 const App = ()  =>{
   return (
-    <div className="App">
-      <h1>Root Component</h1>
-    </div>
+    <TruthContext.Provider value={truth}>
+      <First />
+    </TruthContext.Provider>
   );
 }
 
